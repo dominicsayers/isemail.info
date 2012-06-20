@@ -1,0 +1,48 @@
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:apigee="http://api.apigee.com/wadl/2010/07/" 
+  xmlns="http://wadl.dev.java.net/2009/02"
+  xsi:schemaLocation="http://wadl.dev.java.net/2009/02 http://apigee.com/schemas/wadl-schema.xsd http://api.apigee.com/wadl/2010/07/ http://apigee.com/schemas/apigee-wadl-extensions.xsd">
+
+  <!-- Base defines the domain and base path of the endpoint -->
+  <resources base="http://isemail.info">
+
+    <resource path="/">
+      <!-- A "query" style denotes a query parameter. "header" is a common alternative. -->
+      <param name="address" required="false" type="xsd:string" style="query" default="5">
+        <!-- Docs are optional, but recommended. -->
+        <doc>Specifies the address to validate.</doc>
+      </param>
+
+      <param name="callback" required="false" type="xsd:string" style="query" default="5">
+        <!-- Docs are optional, but recommended. -->
+        <doc>Specifies the callback function for a JSONP request.</doc>
+      </param>
+
+      <method id="json" name="GET" apigee:displayName="json">
+        <apigee:tags>
+          <apigee:tag primary="true">json</apigee:tag>
+        </apigee:tags>
+        <apigee:authentication required="false" />
+        <apigee:example url="/json/[address]" />
+
+        <doc title="" apigee:url="http://isemail.info/help">
+          Validates the supplied email address and returns the results in JSON format.
+        </doc>
+      </method>
+
+      <method id="jsonp" name="GET" apigee:displayName="jsonp">
+        <apigee:tags>
+          <apigee:tag primary="true">json</apigee:tag>
+          <apigee:tag primary="true">jsonp</apigee:tag>
+        </apigee:tags>
+        <apigee:authentication required="false" />
+        <apigee:example url="/jsonp[=callback]/[address]" />
+
+        <doc title="" apigee:url="http://isemail.info/help">
+          Validates the supplied email address and returns the results in JSONP format.
+        </doc>
+      </method>
+    </resource>
+  </resources>
+</application>

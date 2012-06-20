@@ -1,0 +1,75 @@
+@charset "UTF-8";
+@import url("style.css");
+@import url("flexbox.css");
+
+/* Apologies */
+html.no-flexbox body:before
+			{color:red;content:"This browser doesn't seem to support the Flexible Box Model. This means the page will look a bit shit.";}
+
+/* Page metrics */
+html, body, #site	{width:99.9%;height:99.9%;}
+#site			{min-height:99.9%;height:auto !important;}	/* Webkit */
+.leftcol		{width:192px;}
+.banner			{min-height:96px;}
+.toppad			{padding-top:18px;}
+h1, h2, h3, h4, h5, h6	{clear:left;}
+
+/* Style */
+body			{line-height:1.4em;font-family:"Segoe UI",Calibri,Arial,"Helvetica Neue","sans serif";}
+article, #disqus_thread, footer menu, div.constrained_width
+			{max-width:800px;margin-left:auto;margin-right:auto;}
+div			{font-size:12px;font-weight:normal;}
+h1, h2, h3, h4, h5, h6	{font-weight:normal;color:#222;margin-top:1em;}
+h1			{font-size:24px;line-height:1.5em;}
+h2			{font-size:16px;line-height:1.5em;}
+p			{margin-bottom:0.5em;}
+li			{font-size:16px;font-weight:bold;line-height:2em;list-style-type:none;padding-left:12px;}
+#logo			{text-align:center;}
+a			{text-decoration:none;}
+.form			{border-top:1px solid white;background-color:#E5D5D5;padding:18px 12px 12px 12px;margin-top:12px;}
+form, input, button	{font-size:16px;font-weight:bold;color:#400300;}
+button			{margin-left:1em;}
+code			{color:#000080;font-family:Consolas,"Courier New",Courier,"DejaVu Sans Mono",monospace;}
+blockquote		{margin-left:5em;font-style:italic;color:#666;}
+
+/* Specific sections */
+header h1		{color:#EEE;}
+.banner			{background-color:#400300;color:#AAA;}
+.banner a		{color:#DDD;}
+.banner a:hover		{color:#FFF;}
+
+div.constrained_width
+			{padding:12px 0 12px 0;} /* Webkit */
+
+#sitenav		{text-align:right;padding-right:12px;}
+#sitenav li		{padding:0 12px 12px 24px;}
+
+#results		{background-color:#DDD;color:#444;}
+#results span		{color:#000;}
+#results .summary	{padding:12px;line-height:2em;}
+#results .notes		{border-top:1px solid white;width:100%;font-size:10px;color:#666;}
+#results dt		{padding:12px 0 12px 12px;}
+#results dd		{padding:12px 12px 12px 0.5em;}
+#results blockquote	{line-height:1.5em;margin-left:5em;font-style:italic;}
+#results a		{margin-left:5em;}
+
+#methods dt		{float:left;width:192px;clear:left;margin-right:-192px;color:#222;margin-top:1em;color:#000080;font:normal normal bold 16px Consolas,"Courier New",Courier,"DejaVu Sans Mono",monospace;}
+#methods dd		{float:left;margin-left:192px;}
+#methods dt + dd	{margin-top:1em;}
+#methods dd + dd	{clear:left;margin-top:0;}	/* Webkit */
+
+#disqus_thread		{padding:12px 12px 0 12px;}
+
+footer			{margin-top: 12px;}	/* Webkit */
+
+footer menu		{
+				height:96px; /* Mozilla */
+				column-width:150px;
+				-moz-column-width:150px;
+				-webkit-column-width:150px;
+			}
+footer li		{font-size:12px;}
+
+
+/* Highlight elements to show layout */
+/* header, footer, nav, aside, form, div {background-color:rgba(240,240,240,0.5);border:1px solid white;}	*/
