@@ -378,14 +378,13 @@ congratulations, you've done something hard.</p>
 See the tests and the results for <em>is_email()</em> <A HREF="/_system/is_email/test/?all" TARGET="_blank">here</A>.</p>
 <p>
 If you think any of the test cases is wrong please leave a comment
-here or on <A HREF="http://blog.dominicsayers.com/category/email-address-validation/" TARGET="_blank">my
-blog</A>.</p>
+here.</p>
 				</section>
 				<section>
 <h2>Downloading <em>is_email()</em></h2>
 <p>
 I've written <em>is_email()</em> as a simple PHP function so it's easy to
-include in your project. <A HREF="http://code.google.com/p/isemail/downloads/list" TARGET="_blank">Just
+include in your project. <A HREF="https://github.com/dominicsayers/isemail/archive/master.zip" TARGET="_blank">Just
 download the package here</A>. The tests are included in the package.</p>
 				</section>
 			</article>
@@ -402,7 +401,7 @@ HTML;
 			$reference	= $analysis[ISEMAIL_META_REF_ALT];
 			$method_ref	= $methods[ISEMAIL_META_REF_ALT];
 			$reference_html	= ($reference === '') ? '' : "\t\t\t\t\t<p>Here is the relevant passage from the email RFCs: <span id=\"$method_ref\">$reference</span></p>\r\n";
-			
+
 			$html		= <<<HTML
 			<article id="results">
 				<section class="summary">
@@ -434,7 +433,7 @@ if ($mime !== 'text/html') {
 ?>
 <!DOCTYPE html>
 
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ --> 
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
 <!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
@@ -443,7 +442,7 @@ if ($mime !== 'text/html') {
 <head>
 	<meta charset="utf-8">
 
-	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
 	     Remove this if you use the .htaccess -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
@@ -460,7 +459,7 @@ if ($mime !== 'text/html') {
 
 	<!-- CSS : implied media="all" -->
 	<link rel="stylesheet" href="/css/isemail.info.css?v2">
- 
+
 	<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
 	<script src="/js/libs/modernizr-1.6.min.js"></script>
 </head>
@@ -474,8 +473,8 @@ if ($mime !== 'text/html') {
 				<div class="boxFlex">&nbsp;</div>
 				<menu id="sitenav" class="hbox">
 					<li><a href="/">Home</a></li>
-					<li><a href="http://code.google.com/p/isemail/downloads" target="_blank">Download</a></li>
-					<li><a href="http://blog.dominicsayers.com/category/email-address-validation/" target="_blank">Blog</a></li>
+					<li><a href="https://github.com/dominicsayers/isemail/archive/master.zip">Download</a></li>
+					<li><a href="http://blog.dominicsayers.com" target="_blank">Blog</a></li>
 					<li><a href="/help">Help</a></li>
 					<li><a href="/about">About</a></li>
 					<li><form action="https://www.paypal.com/cgi-bin/webscr" method="post">
@@ -488,7 +487,7 @@ if ($mime !== 'text/html') {
 				</menu>
 			</div>
 		</header>
-	
+
 		<div id="app" class="boxFlex">
 			<div class="constrained_width"> <!-- Mozilla needs inner div or else the whole page goes narrow -->
 <?php echo $html; ?>
@@ -500,15 +499,15 @@ if ($mime !== 'text/html') {
 				</div>
 			</div>
 		</div>
-	  
+
 		<div id="comments"> <!-- Mozilla needs inner div or else the whole page goes narrow -->
 			<div id="disqus_thread"></div>
 		</div>
 
 		<footer class="banner">
 			<menu>
-				<li><a href="http://code.google.com/p/isemail/downloads" target="_blank">Download</a></li>
-				<li><a href="http://blog.dominicsayers.com/category/email-address-validation/" target="_blank">Blog</a></li>
+				<li><a href="https://github.com/dominicsayers/isemail/archive/master.zip">Download</a></li>
+				<li><a href="http://blog.dominicsayers.com" target="_blank">Blog</a></li>
 				<li><a href="/help">Help</a></li>
 				<li><a href="/about">About</a></li>
 				<li><a href="http://tools.ietf.org/html/rfc5321" target="_blank">RFC 5321</a></li>
@@ -533,12 +532,12 @@ if ($mime !== 'text/html') {
 	<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
 	<script>!window.jQuery && document.write(unescape('%3Cscript src="/js/libs/jquery-1.4.2.js"%3E%3C/script%3E'))</script>
-	
+
 	<!-- scripts concatenated and minified via ant build script-->
 	<script src="/js/plugins.js"></script>
 	<script src="/js/script.js"></script>
 	<!-- end concatenated and minified scripts-->
-	
+
 	<!--[if lt IE 7 ]>
 	<script src="/js/libs/dd_belatedpng.js"></script>
 	<script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
@@ -561,7 +560,7 @@ if ($mime !== 'text/html') {
 		})();
 	</script>
 
-	<!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
+	<!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet
 	     change the UA-XXXXX-X to be your site's ID -->
 	<script>
 		var _gaq = [['_setAccount', 'UA-23828714-1'], ['_trackPageview']];
@@ -570,7 +569,7 @@ if ($mime !== 'text/html') {
 			var	g = d.createElement(t),
 				s = d.getElementsByTagName(t)[0];
 				g.async = true;
-	
+
 			g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 			s.parentNode.insertBefore(g, s);
 		})(document, 'script');
@@ -585,7 +584,7 @@ if ($mime !== 'text/html') {
 	<script>
 		var feedback_widget_options = {};
 
-		feedback_widget_options.display = "overlay";  
+		feedback_widget_options.display = "overlay";
 		feedback_widget_options.company = "isemail-info";
 		feedback_widget_options.placement = "right";
 		feedback_widget_options.color = "#400300";
