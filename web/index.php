@@ -257,7 +257,7 @@ HTML;
 			<article>
 				<section>
 <p>This is an email address validation
-service powered by the free PHP function <em><a href="https://code.google.com/p/isemail/" TARGET="_blank">is_email()</a></em> created by
+service powered by the free PHP function <em><a href="https://github.com/dominicsayers/isemail" TARGET="_blank">is_email()</a></em> created by
 <a href="https://dominicsayers.com/">Dominic Sayers</a>.</p>
 				</section>
 				<section>
@@ -518,7 +518,7 @@ if ($mime !== 'text/html') {
 				<li><a href="https://tools.ietf.org/html/rfc4291" target="_blank">RFC 4291</a></li>
 				<li><a href="https://tools.ietf.org/html/rfc1123" target="_blank">RFC 1123</a></li>
 				<li>&copy; 2016 <a href="https://dominicsayers.com" target="_blank">Dominic Sayers</a></li>
-				<li>Powered by <a href="https://https://github.com/dominicsayers/isemail" target="_blank">is_email()</a></li>
+				<li>Powered by <a href="https://github.com/dominicsayers/isemail" target="_blank">is_email()</a></li>
 				<li><form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="5E3PPJVR2VE3G">
