@@ -454,9 +454,12 @@ if ($mime !== 'text/html') {
 	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
-	<link rel="shortcut icon" href="/favicon.ico">
-	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#400300">
+	<meta name="theme-color" content="#ffffff">
 
 	<!-- CSS : implied media="all" -->
 	<link rel="stylesheet" href="/css/isemail.info.css?v2">
