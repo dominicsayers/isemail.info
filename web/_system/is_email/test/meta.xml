@@ -65,7 +65,7 @@ Date       Diagnoses    Version Notes
 
 	<References>
 		<item id="local-part">
-			<blockquote cite="http://tools.ietf.org/html/rfc5322#section-3.4.1">
+			<blockquote cite="https://tools.ietf.org/html/rfc5322#section-3.4.1">
    local-part      =   dot-atom / quoted-string / obs-local-part
 
    dot-atom        =   [CFWS] dot-atom-text [CFWS]
@@ -84,13 +84,13 @@ Date       Diagnoses    Version Notes
 			<cite>RFC 5322 section 3.4.1</cite>
 		</item>
 		<item id="local-part-maximum">
-			<blockquote cite="http://tools.ietf.org/html/rfc5321#section-4.5.3.1.1">
+			<blockquote cite="https://tools.ietf.org/html/rfc5321#section-4.5.3.1.1">
    The maximum total length of a user name or other local-part is 64
    octets.</blockquote>
 			<cite>RFC 5322 section 4.5.3.1.1</cite>
 		</item>
 		<item id="obs-local-part">
-			<blockquote cite="http://tools.ietf.org/html/rfc5322#section-3.4.1">
+			<blockquote cite="https://tools.ietf.org/html/rfc5322#section-3.4.1">
    obs-local-part  =   word *("." word)
 
    word            =   atom / quoted-string
@@ -104,7 +104,7 @@ Date       Diagnoses    Version Notes
 			<cite>RFC 5322 section 3.4.1</cite>
 		</item>
 		<item id="dot-atom">
-			<blockquote cite="http://tools.ietf.org/html/rfc5322#section-3.4.1">
+			<blockquote cite="https://tools.ietf.org/html/rfc5322#section-3.4.1">
    dot-atom        =   [CFWS] dot-atom-text [CFWS]
 
    dot-atom-text   =   1*atext *("." 1*atext)
@@ -112,7 +112,7 @@ Date       Diagnoses    Version Notes
 			<cite>RFC 5322 section 3.4.1</cite>
 		</item>
 		<item id="quoted-string">
-			<blockquote cite="http://tools.ietf.org/html/rfc5322#section-3.4.1">
+			<blockquote cite="https://tools.ietf.org/html/rfc5322#section-3.4.1">
    quoted-string   =   [CFWS]
                        DQUOTE *([FWS] qcontent) [FWS] DQUOTE
                        [CFWS]
@@ -129,14 +129,14 @@ Date       Diagnoses    Version Notes
 			<cite>RFC 5322 section 3.4.1</cite>
 		</item>
 		<item id="CFWS-near-at">
-			<blockquote cite="http://tools.ietf.org/html/rfc5322#section-3.4.1">
+			<blockquote cite="https://tools.ietf.org/html/rfc5322#section-3.4.1">
    Comments and folding white space
    SHOULD NOT be used around the "@" in the addr-spec.
 </blockquote>
 			<cite>RFC 5322 section 3.4.1</cite>
 		</item>
 		<item id="SHOULD-NOT">
-			<blockquote cite="http://tools.ietf.org/html/rfc2119">
+			<blockquote cite="https://tools.ietf.org/html/rfc2119">
  4. SHOULD NOT   This phrase, or the phrase "NOT RECOMMENDED" mean that
     there may exist valid reasons in particular circumstances when the
     particular behavior is acceptable or even useful, but the full
@@ -146,7 +146,7 @@ Date       Diagnoses    Version Notes
 			<cite>RFC 2119 section 4</cite>
 		</item>
 		<item id="atext">
-			<blockquote cite="http://tools.ietf.org/html/rfc5322#section-3.2.3">
+			<blockquote cite="https://tools.ietf.org/html/rfc5322#section-3.2.3">
     atext           =   ALPHA / DIGIT /    ; Printable US-ASCII
                         "!" / "#" /        ;  characters not including
                         "$" / "%" /        ;  specials.  Used for atoms.
@@ -162,7 +162,7 @@ Date       Diagnoses    Version Notes
 			<cite>RFC 5322 section 3.2.3</cite>
 		</item>
 		<item id="obs-domain">
-			<blockquote cite="http://tools.ietf.org/html/rfc5322#section-3.4.1">
+			<blockquote cite="https://tools.ietf.org/html/rfc5322#section-3.4.1">
    obs-domain      =   atom *("." atom)
 
    atom            =   [CFWS] 1*atext [CFWS]
@@ -170,7 +170,7 @@ Date       Diagnoses    Version Notes
 			<cite>RFC 5322 section 3.4.1</cite>
 		</item>
 		<item id="domain-RFC5322">
-			<blockquote cite="http://tools.ietf.org/html/rfc5322#section-3.4.1">
+			<blockquote cite="https://tools.ietf.org/html/rfc5322#section-3.4.1">
    domain          =   dot-atom / domain-literal / obs-domain
 
    dot-atom        =   [CFWS] dot-atom-text [CFWS]
@@ -180,13 +180,13 @@ Date       Diagnoses    Version Notes
 			<cite>RFC 5322 section 3.4.1</cite>
 		</item>
 		<item id="domain-RFC5321">
-			<blockquote cite="http://tools.ietf.org/html/rfc5321#section-4.1.2">
+			<blockquote cite="https://tools.ietf.org/html/rfc5321#section-4.1.2">
    Domain         = sub-domain *("." sub-domain)
 </blockquote>
 			<cite>RFC 5321 section 4.1.2</cite>
 		</item>
 		<item id="sub-domain">
-			<blockquote cite="http://tools.ietf.org/html/rfc5321#section-4.1.2">
+			<blockquote cite="https://tools.ietf.org/html/rfc5321#section-4.1.2">
    Domain         = sub-domain *("." sub-domain)
 
    Let-dig        = ALPHA / DIGIT
@@ -196,19 +196,19 @@ Date       Diagnoses    Version Notes
 			<cite>RFC 5321 section 4.1.2</cite>
 		</item>
 		<item id="label">
-			<blockquote cite="http://tools.ietf.org/html/rfc1035#section-2.3.4">
+			<blockquote cite="https://tools.ietf.org/html/rfc1035#section-2.3.4">
    labels          63 octets or less
 </blockquote>
 			<cite>RFC 5321 section 4.1.2</cite>
 		</item>
 		<item id="CRLF">
-			<blockquote cite="http://tools.ietf.org/html/rfc5234#section-2.3">
+			<blockquote cite="https://tools.ietf.org/html/rfc5234#section-2.3">
    CRLF        =  %d13.10
 </blockquote>
 			<cite>RFC 5234 section 2.3</cite>
 		</item>
 		<item id="CFWS">
-			<blockquote cite="http://tools.ietf.org/html/rfc5322#section-3.2.2">
+			<blockquote cite="https://tools.ietf.org/html/rfc5322#section-3.2.2">
    CFWS            =   (1*([FWS] comment) [FWS]) / FWS
 
    FWS             =   ([*WSP CRLF] 1*WSP) /  obs-FWS
@@ -226,13 +226,13 @@ Date       Diagnoses    Version Notes
 			<cite>RFC 5322 section 3.2.2</cite>
 		</item>
 		<item id="domain-literal">
-			<blockquote cite="http://tools.ietf.org/html/rfc5322#section-3.4.1">
+			<blockquote cite="https://tools.ietf.org/html/rfc5322#section-3.4.1">
    domain-literal  =   [CFWS] "[" *([FWS] dtext) [FWS] "]" [CFWS]
 </blockquote>
 			<cite>RFC 5322 section 3.4.1</cite>
 		</item>
 		<item id="address-literal">
-			<blockquote cite="http://tools.ietf.org/html/rfc5321#section-4.1.2">
+			<blockquote cite="https://tools.ietf.org/html/rfc5321#section-4.1.2">
    address-literal  = "[" ( IPv4-address-literal /
                     IPv6-address-literal /
                     General-address-literal ) "]"
@@ -240,7 +240,7 @@ Date       Diagnoses    Version Notes
 			<cite>RFC 5321 section 4.1.2</cite>
 		</item>
 		<item id="address-literal-IPv4">
-			<blockquote cite="http://tools.ietf.org/html/rfc5321#section-4.1.3">
+			<blockquote cite="https://tools.ietf.org/html/rfc5321#section-4.1.3">
    IPv4-address-literal  = Snum 3("."  Snum)
 
    Snum           = 1*3DIGIT
@@ -250,7 +250,7 @@ Date       Diagnoses    Version Notes
 			<cite>RFC 5321 section 4.1.3</cite>
 		</item>
 		<item id="address-literal-IPv6">
-			<blockquote cite="http://tools.ietf.org/html/rfc5321#section-4.1.3">
+			<blockquote cite="https://tools.ietf.org/html/rfc5321#section-4.1.3">
    IPv6-address-literal  = "IPv6:" IPv6-addr
 
    IPv6-addr      = IPv6-full / IPv6-comp / IPv6v4-full / IPv6v4-comp
@@ -277,7 +277,7 @@ Date       Diagnoses    Version Notes
 			<cite>RFC 5321 section 4.1.3</cite>
 		</item>
 		<item id="dtext">
-			<blockquote cite="http://tools.ietf.org/html/rfc5322#section-3.4.1">
+			<blockquote cite="https://tools.ietf.org/html/rfc5322#section-3.4.1">
    dtext           =   %d33-90 /          ; Printable US-ASCII
                        %d94-126 /         ;  characters not including
                        obs-dtext          ;  "[", "]", or "\"
@@ -285,7 +285,7 @@ Date       Diagnoses    Version Notes
 			<cite>RFC 5322 section 3.4.1</cite>
 		</item>
 		<item id="obs-dtext">
-			<blockquote cite="http://tools.ietf.org/html/rfc5322#section-3.4.1">
+			<blockquote cite="https://tools.ietf.org/html/rfc5322#section-3.4.1">
    obs-dtext       =   obs-NO-WS-CTL / quoted-pair
 
    obs-NO-WS-CTL   =   %d1-8 /            ; US-ASCII control
@@ -297,7 +297,7 @@ Date       Diagnoses    Version Notes
 			<cite>RFC 5322 section 3.4.1</cite>
 		</item>
 		<item id="qtext">
-			<blockquote cite="http://tools.ietf.org/html/rfc5322#section-3.2.4">
+			<blockquote cite="https://tools.ietf.org/html/rfc5322#section-3.2.4">
    qtext           =   %d33 /             ; Printable US-ASCII
                        %d35-91 /          ;  characters not including
                        %d93-126 /         ;  "\" or the quote character
@@ -306,7 +306,7 @@ Date       Diagnoses    Version Notes
 			<cite>RFC 5322 section 3.2.4</cite>
 		</item>
 		<item id="obs-qtext">
-			<blockquote cite="http://tools.ietf.org/html/rfc5322#section-4.1">
+			<blockquote cite="https://tools.ietf.org/html/rfc5322#section-4.1">
    obs-qtext       =   obs-NO-WS-CTL
 
    obs-NO-WS-CTL   =   %d1-8 /            ; US-ASCII control
@@ -318,7 +318,7 @@ Date       Diagnoses    Version Notes
 			<cite>RFC 5322 section 4.1</cite>
 		</item>
 		<item id="ctext">
-			<blockquote cite="http://tools.ietf.org/html/rfc5322#section-3.2.3">
+			<blockquote cite="https://tools.ietf.org/html/rfc5322#section-3.2.3">
    ctext           =   %d33-39 /          ; Printable US-ASCII
                        %d42-91 /          ;  characters not including
                        %d93-126 /         ;  "(", ")", or "\"
@@ -327,7 +327,7 @@ Date       Diagnoses    Version Notes
 			<cite>RFC 5322 section 3.2.3</cite>
 		</item>
 		<item id="obs-ctext">
-			<blockquote cite="http://tools.ietf.org/html/rfc5322#section-4.1">
+			<blockquote cite="https://tools.ietf.org/html/rfc5322#section-4.1">
    obs-qtext       =   obs-NO-WS-CTL
 
    obs-NO-WS-CTL   =   %d1-8 /            ; US-ASCII control
@@ -339,7 +339,7 @@ Date       Diagnoses    Version Notes
 			<cite>RFC 5322 section 4.1</cite>
 		</item>
 		<item id="quoted-pair">
-			<blockquote cite="http://tools.ietf.org/html/rfc5322#section-3.2.1">
+			<blockquote cite="https://tools.ietf.org/html/rfc5322#section-3.2.1">
    quoted-pair     =   ("\" (VCHAR / WSP)) / obs-qp
 
    VCHAR           =  %d33-126            ; visible (printing) characters
@@ -348,7 +348,7 @@ Date       Diagnoses    Version Notes
 			<cite>RFC 5322 section 3.2.1</cite>
 		</item>
 		<item id="obs-qp">
-			<blockquote cite="http://tools.ietf.org/html/rfc5322#section-4.1">
+			<blockquote cite="https://tools.ietf.org/html/rfc5322#section-4.1">
    obs-qp          =   "\" (%d0 / obs-NO-WS-CTL / LF / CR)
 
    obs-NO-WS-CTL   =   %d1-8 /            ; US-ASCII control
@@ -360,7 +360,7 @@ Date       Diagnoses    Version Notes
 			<cite>RFC 5322 section 4.1</cite>
 		</item>
 		<item id="TLD">
-			<blockquote cite="http://tools.ietf.org/html/rfc5321#section-2.3.5">
+			<blockquote cite="https://tools.ietf.org/html/rfc5321#section-2.3.5">
    In the case
    of a top-level domain used by itself in an email address, a single
    string is used without any dots.  This makes the requirement,
@@ -371,7 +371,7 @@ Date       Diagnoses    Version Notes
 			<cite>RFC 5321 section 2.3.5</cite>
 		</item>
 		<item id="TLD-format">
-			<blockquote cite="http://www.rfc-editor.org/errata_search.php?eid=1353">
+			<blockquote cite="https://www.rfc-editor.org/errata_search.php?eid=1353">
    Errata ID 1081, reported 2007-11-20, identifies a problem with the
    evolution of naming of top-level domains and the text of RFC 1123.
    It reads:
@@ -447,7 +447,7 @@ Date       Diagnoses    Version Notes
   			<cite>John Klensin, RFC 1123 erratum 1353</cite>
   		</item>
  		<item id="mailbox-maximum">
-  			<blockquote cite="http://www.rfc-editor.org/errata_search.php?eid=1690">
+  			<blockquote cite="https://www.rfc-editor.org/errata_search.php?eid=1690">
    However, there is a restriction in RFC 2821 on the length of an
    address in MAIL and RCPT commands of 254 characters.  Since addresses
    that do not fit in those fields are not normally useful, the upper
@@ -456,19 +456,19 @@ Date       Diagnoses    Version Notes
 			<cite>Dominic Sayers, RFC 3696 erratum 1690</cite>
 		</item>
 		<item id="domain-maximum">
-			<blockquote cite="http://tools.ietf.org/html/rfc1035#section-4.5.3.1.2">
+			<blockquote cite="https://tools.ietf.org/html/rfc1035#section-4.5.3.1.2">
    The maximum total length of a domain name or number is 255 octets.
 </blockquote>
 			<cite>RFC 5321 section 4.5.3.1.2</cite>
 		</item>
 		<item id="mailbox">
-			<blockquote cite="http://tools.ietf.org/html/rfc5321#section-4.1.2">
+			<blockquote cite="https://tools.ietf.org/html/rfc5321#section-4.1.2">
    Mailbox        = Local-part "@" ( Domain / address-literal )
 </blockquote>
 			<cite>RFC 5321 section 4.1.2</cite>
 		</item>
 		<item id="addr-spec">
-			<blockquote cite="http://tools.ietf.org/html/rfc5322#section-3.4.1">
+			<blockquote cite="https://tools.ietf.org/html/rfc5322#section-3.4.1">
    addr-spec       =   local-part "@" domain
 </blockquote>
 			<cite>RFC 5322 section 3.4.1</cite>

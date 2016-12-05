@@ -1,7 +1,7 @@
 is_email()
 Copyright 2008-2011 Dominic Sayers <dominic@sayers.cc>
-http://isemail.info
-BSD License (http://www.opensource.org/licenses/bsd-license.php)
+https://isemail.info
+BSD License (https://www.opensource.org/licenses/bsd-license.php)
 
 -------------------------------------------------------------------------------
 How to use is_email()
@@ -49,5 +49,5 @@ Date       Component    Version Notes
 
 2010-11-15 meta.xml	3.03    Clarified definition of Valid for numpties
 
-2011-07-14 tests.xml	3.04	Changed my link to http://isemail.info
+2011-07-14 tests.xml	3.04	Changed my link to https://isemail.info
 -------------------------------------------------------------------------------

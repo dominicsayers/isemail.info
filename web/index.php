@@ -42,9 +42,9 @@ $requestURI	= rawurldecode($_SERVER['REQUEST_URI']);
 $delim_pos	= strpos($requestURI, SLASH, 1) ; // First character is always SLASH (we hope)
 
 // URI is in the format
-// http://<website>/<method[=value]>/<address> or
-// http://<website>/<reserved> or
-// http://<website>/<address>
+// https://<website>/<method[=value]>/<address> or
+// https://<website>/<reserved> or
+// https://<website>/<address>
 if ($delim_pos === false) {
 	$address	= substr($requestURI, 1);
 
@@ -176,16 +176,16 @@ XML;
 					<h1>How to use the email address validation service</h1>
 					<p>The email address validation service has a REST API. The validation results can be returned as semantic HTML, JSON, JSONP or XML.</p>
 					<p>In general you would validate an email address like this:
-					<strong><code>http://$host/&lt;method&gt;/&lt;address&gt;</code></strong>
+					<strong><code>https://$host/&lt;method&gt;/&lt;address&gt;</code></strong>
 					where <code>&lt;method&gt;</code> is one of the methods described below and
 					<code>&lt;address&gt;</code> is the address you want to validate.</p>
 				</section>
 				<section>
 					<h2>Default method</h2>
-					<p>If you just use <code>http://$host/&lt;address&gt;</code> then the validator
+					<p>If you just use <code>https://$host/&lt;address&gt;</code> then the validator
 					will return information about <code>&lt;address&gt;</code> in the default HTML format.</p>
 					<p>There are some reserved words you can't test like this, for instance
-					<code>http://$host/help</code> and <code>http://$host/about</code> and all
+					<code>https://$host/help</code> and <code>https://$host/about</code> and all
 					the methods documented below.</p>
 				</section>
 				<section>
@@ -202,51 +202,51 @@ XML;
 					<p>Here are the methods you can use</p>
 					<dl id="methods">
 						<dt>json</dt>
-						<dd>e.g. <code>http://$host/json/test@example.com</code></dd>
+						<dd>e.g. <code>https://$host/json/test@example.com</code></dd>
 						<dd>Returns comprehensive information about <code>test@example.com</code> as JSON data.</dd>
 						<dt>jsonp=callback</dt>
-						<dd>e.g. <code>http://$host/jsonp=myFunction/test@example.com</code></dd>
+						<dd>e.g. <code>https://$host/jsonp=myFunction/test@example.com</code></dd>
 						<dd>Returns a valid line of Javascript calling the function <code>myFunction</code> with comprehensive information about <code>test@example.com</code>.</dd>
 						<dt>xml</dt>
-						<dd>e.g. <code>http://$host/xml/test@example.com</code></dd>
+						<dd>e.g. <code>https://$host/xml/test@example.com</code></dd>
 						<dd>Returns comprehensive information about <code>test@example.com</code> as XML data.</dd>
 						<dt>html</dt>
-						<dd>e.g. <code>http://$host/html/test@example.com</code></dd>
+						<dd>e.g. <code>https://$host/html/test@example.com</code></dd>
 						<dd>Returns comprehensive information about <code>test@example.com</code> in HTML format (this is the default).</dd>
 						<dt>basic</dt>
-						<dd>e.g. <code>http://$host/basic/test@example.com</code></dd>
+						<dd>e.g. <code>https://$host/basic/test@example.com</code></dd>
 						<dd>Returns brief, basic information about <code>test@example.com</code> as an HTML fragment.</dd>
 						<dt>valid</dt>
-						<dd>e.g. <code>http://$host/valid/test@example.com</code></dd>
-						<dd>Returns 1 for a valid <a href="http://tools.ietf.org/html/rfc5321#section-4.1.2">RFC 5321 Mailbox</a>, 0 otherwise.</dd>
+						<dd>e.g. <code>https://$host/valid/test@example.com</code></dd>
+						<dd>Returns 1 for a valid <a href="https://tools.ietf.org/html/rfc5321#section-4.1.2">RFC 5321 Mailbox</a>, 0 otherwise.</dd>
 						<dt>diagnosis</dt>
-						<dd>e.g. <code>http://$host/diagnosis/test@example.com</code></dd>
+						<dd>e.g. <code>https://$host/diagnosis/test@example.com</code></dd>
 						<dd>Returns the specific diagnostic text for this address.</dd>
 						<dt>category</dt>
-						<dd>e.g. <code>http://$host/category/test@example.com</code></dd>
+						<dd>e.g. <code>https://$host/category/test@example.com</code></dd>
 						<dd>Returns the general diagnostic category for this address.</dd>
 						<dt>numeric</dt>
-						<dd>e.g. <code>http://$host/numeric/test@example.com</code></dd>
+						<dd>e.g. <code>https://$host/numeric/test@example.com</code></dd>
 						<dd>Returns the specific diagnosis for this address as an integer.</dd>
 						<dt>constant</dt>
-						<dd>e.g. <code>http://$host/constant/test@example.com</code></dd>
+						<dd>e.g. <code>https://$host/constant/test@example.com</code></dd>
 						<dd>Returns the specific diagnosis for this address as a constant name.</dd>
 						<dt>categoryconstant</dt>
-						<dd>e.g. <code>http://$host/categoryconstant/test@example.com</code></dd>
+						<dd>e.g. <code>https://$host/categoryconstant/test@example.com</code></dd>
 						<dd>Returns the general diagnostic category for this address as a constant name.</dd>
 						<dt>smtp</dt>
-						<dd>e.g. <code>http://$host/smtp/test@example.com</code></dd>
+						<dd>e.g. <code>https://$host/smtp/test@example.com</code></dd>
 						<dd>Returns the likely SMTP extended return code for this address as text.</dd>
 						<dt>reference</dt>
-						<dd>e.g. <code>http://$host/reference/test@example.com</code></dd>
+						<dd>e.g. <code>https://$host/reference/test@example.com</code></dd>
 						<dd>Returns any relevant passages from the RFCs that help to support the diagnosis for this address.</dd>
 					</dl>
 				</section>
 				<section>
 					<h2>Behaviour note</h2>
 					<p>What if you are testing an address that is the same as a method name? Here's what happens:</p>
-					<p><code>http://$host/&lt;method&gt;</code> tests <code>&lt;method&gt;</code> as if it was an address.</p>
-					<p><code>http://$host/&lt;method&gt;/</code> (note the trailing slash) tests the empty string and returns the results in the format specified by <code>&lt;method&gt;</code>.</p>
+					<p><code>https://$host/&lt;method&gt;</code> tests <code>&lt;method&gt;</code> as if it was an address.</p>
+					<p><code>https://$host/&lt;method&gt;/</code> (note the trailing slash) tests the empty string and returns the results in the format specified by <code>&lt;method&gt;</code>.</p>
 				</section>
 			</article>
 HTML;
@@ -257,8 +257,8 @@ HTML;
 			<article>
 				<section>
 <p>This is an email address validation
-service powered by the free PHP function <em><a href="http://code.google.com/p/isemail/" TARGET="_blank">is_email()</a></em> created by
-<a href="http://dominicsayers.com/">Dominic Sayers</a>.</p>
+service powered by the free PHP function <em><a href="https://code.google.com/p/isemail/" TARGET="_blank">is_email()</a></em> created by
+<a href="https://dominicsayers.com/">Dominic Sayers</a>.</p>
 				</section>
 				<section>
 <h1>What is a valid email address?</h1>
@@ -266,14 +266,14 @@ service powered by the free PHP function <em><a href="http://code.google.com/p/i
 valid email address is one that you can send emails to.</p>
 <p>There are acknowledged standards for
 what constitutes a valid email address. These are defined in the
-<A HREF="http://en.wikipedia.org/wiki/Request_for_comments" TARGET="_blank">Request
+<A HREF="https://en.wikipedia.org/wiki/Request_for_comments" TARGET="_blank">Request
 For Comments</A> documents (RFCs) written by the lords of the
 internet. These documents are not rules but simply statements of what
 some people feel is appropriate behaviour.</p>
 <p>Consequently, the people who make email
 software have often ignored the RFCs and done their own thing. Thus
 it is perfectly possible for you to have been issued an email address
-by your <A HREF="http://en.wikipedia.org/wiki/Internet_Service_Provider" TARGET="_blank">internet
+by your <A HREF="https://en.wikipedia.org/wiki/Internet_Service_Provider" TARGET="_blank">internet
 service provider</A> (ISP) that flouts the RFC conventions and is in
 that sense <I>invalid</I>.</p>
 <p>But if your address works then why does
@@ -283,8 +283,8 @@ principle in distributed software.</p>
 				</section>
 				<section>
 <h2>The Robustness Principle</h2>
-<p>A <A HREF="http://en.wikipedia.org/wiki/Jon_Postel" TARGET="_blank">very
-great man</A>, now sadly dead, once <A HREF="http://en.wikipedia.org/wiki/Robustness_principle" TARGET="_blank">said</A></p>
+<p>A <A HREF="https://en.wikipedia.org/wiki/Jon_Postel" TARGET="_blank">very
+great man</A>, now sadly dead, once <A HREF="https://en.wikipedia.org/wiki/Robustness_principle" TARGET="_blank">said</A></p>
 <blockquote><p>be conservative in what you do, be liberal in what you accept from
 others</p></blockquote>
 <p>
@@ -344,12 +344,12 @@ regular expression from a dodgy website and they are using it to
 validate email addresses. And losing customers as a result.</p>
 <p>
 How long can an email address be? A lot of people say 320 characters.
-A lot of people are wrong. <A HREF="http://www.rfc-editor.org/errata_search.php?rfc=3696&amp;eid=1690" TARGET="_blank">It's
+A lot of people are wrong. <A HREF="https://www.rfc-editor.org/errata_search.php?rfc=3696&amp;eid=1690" TARGET="_blank">It's
 254 characters</A>.</p>
 <p>
-What RFC is the authority for mailbox formats? <A HREF="http://tools.ietf.org/html/rfc822" TARGET="_blank">RFC
-822</A>? <A HREF="http://tools.ietf.org/html/rfc2822" TARGET="_blank">RFC
-2822</A>? Nope, it's <A HREF="http://tools.ietf.org/html/rfc5321" TARGET="_blank">RFC
+What RFC is the authority for mailbox formats? <A HREF="https://tools.ietf.org/html/rfc822" TARGET="_blank">RFC
+822</A>? <A HREF="https://tools.ietf.org/html/rfc2822" TARGET="_blank">RFC
+2822</A>? Nope, it's <A HREF="https://tools.ietf.org/html/rfc5321" TARGET="_blank">RFC
 5321</A>.</p>
 <p>
 Getting it right is hard because the RFCs that define the conventions
@@ -475,7 +475,7 @@ if ($mime !== 'text/html') {
 				<menu id="sitenav" class="hbox">
 					<li><a href="/">Home</a></li>
 					<li><a href="https://github.com/dominicsayers/isemail/archive/master.zip">Download</a></li>
-					<li><a href="http://blog.dominicsayers.com" target="_blank">Blog</a></li>
+					<li><a href="https://blog.dominicsayers.com" target="_blank">Blog</a></li>
 					<li><a href="/help">Help</a></li>
 					<li><a href="/about">About</a></li>
 					<li><form action="https://www.paypal.com/cgi-bin/webscr" method="post">
@@ -508,17 +508,17 @@ if ($mime !== 'text/html') {
 		<footer class="banner">
 			<menu>
 				<li><a href="https://github.com/dominicsayers/isemail/archive/master.zip">Download</a></li>
-				<li><a href="http://blog.dominicsayers.com" target="_blank">Blog</a></li>
+				<li><a href="https://blog.dominicsayers.com" target="_blank">Blog</a></li>
 				<li><a href="/help">Help</a></li>
 				<li><a href="/about">About</a></li>
-				<li><a href="http://tools.ietf.org/html/rfc5321" target="_blank">RFC 5321</a></li>
-				<li><a href="http://tools.ietf.org/html/rfc5322" target="_blank">RFC 5322</a></li>
-				<li><a href="http://tools.ietf.org/html/rfc5336" target="_blank">RFC 5336</a></li>
-				<li><a href="http://tools.ietf.org/html/rfc5952" target="_blank">RFC 5952</a></li>
-				<li><a href="http://tools.ietf.org/html/rfc4291" target="_blank">RFC 4291</a></li>
-				<li><a href="http://tools.ietf.org/html/rfc1123" target="_blank">RFC 1123</a></li>
-				<li>&copy; 2011 <a href="http://dominicsayers.com" target="_blank">Dominic Sayers</a></li>
-				<li>Powered by <a href="http://isemail.googlecode.com" target="_blank">is_email()</a></li>
+				<li><a href="https://tools.ietf.org/html/rfc5321" target="_blank">RFC 5321</a></li>
+				<li><a href="https://tools.ietf.org/html/rfc5322" target="_blank">RFC 5322</a></li>
+				<li><a href="https://tools.ietf.org/html/rfc5336" target="_blank">RFC 5336</a></li>
+				<li><a href="https://tools.ietf.org/html/rfc5952" target="_blank">RFC 5952</a></li>
+				<li><a href="https://tools.ietf.org/html/rfc4291" target="_blank">RFC 4291</a></li>
+				<li><a href="https://tools.ietf.org/html/rfc1123" target="_blank">RFC 1123</a></li>
+				<li>&copy; 2011 <a href="https://dominicsayers.com" target="_blank">Dominic Sayers</a></li>
+				<li>Powered by <a href="https://isemail.googlecode.com" target="_blank">is_email()</a></li>
 				<li><form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="5E3PPJVR2VE3G">
@@ -551,12 +551,12 @@ if ($mime !== 'text/html') {
 
 		// The following are highly recommended additional parameters. Remove the slashes in front to use.
 		var disqus_identifier = 'isemail.info';
-		var disqus_url = 'http://isemail.info';
+		var disqus_url = 'https://isemail.info';
 
 		/* * * DON'T EDIT BELOW THIS LINE * * */
 		(function() {
 			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-			dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+			dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
 			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 		})();
 	</script>
@@ -571,7 +571,7 @@ if ($mime !== 'text/html') {
 				s = d.getElementsByTagName(t)[0];
 				g.async = true;
 
-			g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			g.src = ('https:' == location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
 			s.parentNode.insertBefore(g, s);
 		})(document, 'script');
 	</script>
@@ -579,7 +579,7 @@ if ($mime !== 'text/html') {
 	<!-- Get Satisfaction -->
 	<script>
 		var is_ssl = ("https:" == document.location.protocol);
-		var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
+		var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "https://s3.amazonaws.com/getsatisfaction.com/";
 		document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
 	</script>
 	<script>
@@ -599,7 +599,7 @@ if ($mime !== 'text/html') {
 var _dashboard_project_id = "96b4ea463ef6facc9c4668409b2cc78f3495c6d1";
 	</script>
 	<script type="text/javascript" charset="utf-8">
-(function() {function async_load(){ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = 'true'; s.src = (document.location.protocol == 'https:' ? "https:" : "http:") + '//dtn4rpwzrtdnb.cloudfront.net/dashboard.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);} if (window.attachEvent) window.attachEvent('onload', async_load); else window.addEventListener('load', async_load, false); })();
+(function() {function async_load(){ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = 'true'; s.src = (document.location.protocol == 'https:' ? "https:" : "https:") + '//dtn4rpwzrtdnb.cloudfront.net/dashboard.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);} if (window.attachEvent) window.attachEvent('onload', async_load); else window.addEventListener('load', async_load, false); })();
 	</script>
 </body>
 </html>

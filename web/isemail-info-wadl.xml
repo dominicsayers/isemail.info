@@ -1,11 +1,11 @@
-<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-  xmlns:apigee="http://api.apigee.com/wadl/2010/07/" 
-  xmlns="http://wadl.dev.java.net/2009/02"
-  xsi:schemaLocation="http://wadl.dev.java.net/2009/02 http://apigee.com/schemas/wadl-schema.xsd http://api.apigee.com/wadl/2010/07/ http://apigee.com/schemas/apigee-wadl-extensions.xsd">
+<application xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="https://www.w3.org/2001/XMLSchema"
+  xmlns:apigee="https://api.apigee.com/wadl/2010/07/"
+  xmlns="https://wadl.dev.java.net/2009/02"
+  xsi:schemaLocation="https://wadl.dev.java.net/2009/02 https://apigee.com/schemas/wadl-schema.xsd https://api.apigee.com/wadl/2010/07/ https://apigee.com/schemas/apigee-wadl-extensions.xsd">
 
   <!-- Base defines the domain and base path of the endpoint -->
-  <resources base="http://isemail.info">
+  <resources base="https://isemail.info">
 
     <resource path="/">
       <!-- A "query" style denotes a query parameter. "header" is a common alternative. -->
@@ -26,7 +26,7 @@
         <apigee:authentication required="false" />
         <apigee:example url="/json/[address]" />
 
-        <doc title="" apigee:url="http://isemail.info/help">
+        <doc title="" apigee:url="https://isemail.info/help">
           Validates the supplied email address and returns the results in JSON format.
         </doc>
       </method>
@@ -39,7 +39,7 @@
         <apigee:authentication required="false" />
         <apigee:example url="/jsonp[=callback]/[address]" />
 
-        <doc title="" apigee:url="http://isemail.info/help">
+        <doc title="" apigee:url="https://isemail.info/help">
           Validates the supplied email address and returns the results in JSONP format.
         </doc>
       </method>
