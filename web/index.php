@@ -517,8 +517,8 @@ if ($mime !== 'text/html') {
 				<li><a href="https://tools.ietf.org/html/rfc5952" target="_blank">RFC 5952</a></li>
 				<li><a href="https://tools.ietf.org/html/rfc4291" target="_blank">RFC 4291</a></li>
 				<li><a href="https://tools.ietf.org/html/rfc1123" target="_blank">RFC 1123</a></li>
-				<li>&copy; 2011 <a href="https://dominicsayers.com" target="_blank">Dominic Sayers</a></li>
-				<li>Powered by <a href="https://isemail.googlecode.com" target="_blank">is_email()</a></li>
+				<li>&copy; 2016 <a href="https://dominicsayers.com" target="_blank">Dominic Sayers</a></li>
+				<li>Powered by <a href="https://https://github.com/dominicsayers/isemail" target="_blank">is_email()</a></li>
 				<li><form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="5E3PPJVR2VE3G">
@@ -539,31 +539,7 @@ if ($mime !== 'text/html') {
 	<script src="/js/script.js"></script>
 	<!-- end concatenated and minified scripts-->
 
-	<!--[if lt IE 7 ]>
-	<script src="/js/libs/dd_belatedpng.js"></script>
-	<script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
-	<![endif]-->
-
 	<!-- Disqus -->
-	<!--
-	<script>
-		/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-		var disqus_shortname = 'isemail-info'; // required
-
-		// The following are highly recommended additional parameters. Remove the slashes in front to use.
-		var disqus_identifier = 'isemail.info';
-		var disqus_url = 'https://isemail.info';
-
-		/* * * DON'T EDIT BELOW THIS LINE * * */
-		(function() {
-			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-			dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
-			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-		})();
-	</script>
-	-->
-
-	<!-- New Disqus -->
 	<script>
 		var disqus_config = function () {
 			this.page.url = 'https://isemail.info';

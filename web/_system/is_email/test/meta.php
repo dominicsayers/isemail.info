@@ -2,7 +2,7 @@
 /**
  * To validate an email address according to RFCs 5321, 5322 and others
  *
- * Copyright © 2008-2011, Dominic Sayers					<br>
+ * Copyright © 2008-2016, Dominic Sayers					<br>
  * Test schema documentation Copyright © 2011, Daniel Marschall			<br>
  * All rights reserved.
  *
@@ -31,10 +31,10 @@
  *
  * @package	is_email
  * @author	Dominic Sayers <dominic@sayers.cc>
- * @copyright	2008-2011 Dominic Sayers
+ * @copyright	2008-2016 Dominic Sayers
  * @license	https://www.opensource.org/licenses/bsd-license.php BSD License
  * @link	https://www.dominicsayers.com/isemail
- * @version	3.04.1 - Changed my link to https://isemail.info throughout
+ * @version	3.06 - Changed my link to https://isemail.info throughout
  */
 
 /*.
