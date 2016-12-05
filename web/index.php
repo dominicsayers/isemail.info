@@ -462,7 +462,7 @@ if ($mime !== 'text/html') {
 	<link rel="stylesheet" href="/css/isemail.info.css?v2">
 
 	<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
-	<script src="/js/libs/modernizr-1.6.min.js"></script>
+	<script src="/js/libs/modernizr-3.3.1.min.js"></script>
 </head>
 
 <body>
@@ -574,32 +574,6 @@ if ($mime !== 'text/html') {
 			g.src = ('https:' == location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
 			s.parentNode.insertBefore(g, s);
 		})(document, 'script');
-	</script>
-
-	<!-- Get Satisfaction -->
-	<script>
-		var is_ssl = ("https:" == document.location.protocol);
-		var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "https://s3.amazonaws.com/getsatisfaction.com/";
-		document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
-	</script>
-	<script>
-		var feedback_widget_options = {};
-
-		feedback_widget_options.display = "overlay";
-		feedback_widget_options.company = "isemail-info";
-		feedback_widget_options.placement = "right";
-		feedback_widget_options.color = "#400300";
-		feedback_widget_options.style = "idea";
-
-		var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
-	</script>
-
-	<!-- dashboard.io -->
-	<script type="text/javascript" charset="utf-8">
-var _dashboard_project_id = "96b4ea463ef6facc9c4668409b2cc78f3495c6d1";
-	</script>
-	<script type="text/javascript" charset="utf-8">
-(function() {function async_load(){ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = 'true'; s.src = (document.location.protocol == 'https:' ? "https:" : "https:") + '//dtn4rpwzrtdnb.cloudfront.net/dashboard.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);} if (window.attachEvent) window.attachEvent('onload', async_load); else window.addEventListener('load', async_load, false); })();
 	</script>
 </body>
 </html>
