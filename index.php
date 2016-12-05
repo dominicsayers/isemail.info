@@ -1,4 +1,5 @@
 <?php
+require('../vendor/autoload.php');
 define('SLASH', '/');
 
 // Deal with $_POST
