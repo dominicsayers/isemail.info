@@ -4,7 +4,7 @@
     "symfony/flex": "^2.0",
     "monolog/monolog": "^3.0",
     "twig/twig": "^3.11",
-    "symfony/twig-bridge": "^7"
+    "symfony/twig-bridge": "^8"
   },
   "require-dev": {
     "heroku/heroku-buildpack-php": "*"
