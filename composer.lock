@@ -556,28 +556,30 @@
         },
         {
             "name": "symfony/twig-bridge",
-            "version": "v8.1.12",
+            "version": "v8.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/twig-bridge.git",
-                "reference": "bf57afd37ccb7ae8ee630e2f6a6f2507b14ef21a"
+                "reference": "6b5759b35cfc009854c049b19d8b58e04cc86f51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/twig-bridge/zipball/bf57afd37ccb7ae8ee630e2f6a6f2507b14ef21a",
-                "reference": "bf57afd37ccb7ae8ee630e2f6a6f2507b14ef21a",
+                "url": "https://api.github.com/repos/symfony/twig-bridge/zipball/6b5759b35cfc009854c049b19d8b58e04cc86f51",
+                "reference": "6b5759b35cfc009854c049b19d8b58e04cc86f51",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.4.1",
                 "symfony/translation-contracts": "^2.5|^3",
-                "twig/twig": "^3.25|^4.0"
+                "twig/twig": "^3.29|^4.0"
             },
             "conflict": {
                 "phpdocumentor/reflection-docblock": "<5.2|>=7",
                 "phpdocumentor/type-resolver": "<1.5.1",
+                "symfony/console": "<8.2",
                 "symfony/form": "<7.4.4|>8.0,<8.0.4",
-                "symfony/mime": "<7.4.9|>8.0,<8.0.9"
+                "symfony/mime": "<7.4.9|>8.0,<8.0.9",
+                "symfony/security-http": "<8.2"
             },
             "require-dev": {
                 "egulias/email-validator": "^2.1.10|^3|^4",
@@ -585,7 +587,7 @@
                 "phpdocumentor/reflection-docblock": "^5.2|^6.0",
                 "symfony/asset": "^7.4|^8.0",
                 "symfony/asset-mapper": "^7.4|^8.0",
-                "symfony/console": "^7.4|^8.0",
+                "symfony/console": "^8.2",
                 "symfony/dependency-injection": "^7.4|^8.0",
                 "symfony/emoji": "^7.4|^8.0",
                 "symfony/expression-language": "^7.4|^8.0",
@@ -602,10 +604,10 @@
                 "symfony/security-acl": "^2.8|^3.0",
                 "symfony/security-core": "^7.4|^8.0",
                 "symfony/security-csrf": "^7.4|^8.0",
-                "symfony/security-http": "^7.4|^8.0",
+                "symfony/security-http": "^8.2",
                 "symfony/serializer": "^7.4.17|^8.1.5",
                 "symfony/stopwatch": "^7.4|^8.0",
-                "symfony/translation": "^7.4|^8.0",
+                "symfony/translation": "^8.2",
                 "symfony/validator": "^7.4|^8.0",
                 "symfony/web-link": "^7.4|^8.0",
                 "symfony/workflow": "^7.4|^8.0",
@@ -640,7 +642,7 @@
             "description": "Provides integration for Twig with various Symfony components",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/twig-bridge/tree/v8.1.12"
+                "source": "https://github.com/symfony/twig-bridge/tree/v8.2.0"
             },
             "funding": [
                 {
@@ -660,8 +662,8 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-11-17T17:40:59+00:00",
-            "published-time": "2026-11-25T09:28:59+00:00"
+            "time": "2026-11-17T17:46:43+00:00",
+            "published-time": "2026-11-28T12:12:05+00:00"
         },
         {
             "name": "twig/twig",
